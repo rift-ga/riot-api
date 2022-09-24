@@ -1,6 +1,14 @@
 {
     "name": "rift/riot-api",
     "description": "Riot APIs Client",
+    "keywords": [
+        "riot",
+        "lol",
+        "league of legends",
+        "api",
+        "client",
+        "riotgames"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
