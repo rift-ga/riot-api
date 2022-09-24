@@ -1,0 +1,21 @@
+{
+    "name": "rift/riot-api",
+    "description": "Riot APIs Client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Łożyński",
+            "email": "lozynskiadam@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rift\\RiotApi\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}
