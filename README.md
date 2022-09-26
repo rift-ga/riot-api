@@ -9,6 +9,10 @@ This package fully implements APIs issued by [Riot Games](https://www.riotgames.
 composer require rift/riot-api dev-main
 ```
 
+## Supported APIs
+
+- [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sup>
+
 ## Dependencies
 
 ```json
