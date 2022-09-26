@@ -11,6 +11,7 @@ composer require rift/riot-api dev-main
 
 ## Supported APIs
 
+- [CHAMPION-MASTERY-V4](https://developer.riotgames.com/apis#champion-mastery-v4) <sub><sup>League of Legends</sup></sup>
 - [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sup>
 
 ## Dependencies
