@@ -4,6 +4,9 @@ namespace Rift\RiotApi\Summoner\V4\Contents;
 
 use Rift\RiotApi\ContentInterface;
 
+/**
+ * Represents a summoner.
+ */
 class SummonerDTO implements ContentInterface
 {
     public function __construct(

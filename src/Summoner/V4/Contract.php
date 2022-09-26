@@ -6,13 +6,43 @@ use Rift\RiotApi\Summoner\V4\Contents\SummonerDTO;
 
 interface Contract
 {
-    public function getSummonerByAccountId(string $encryptedAccountId): ?SummonerDTO;
+    /**
+     * Get a summoner by account ID.
+     *
+     * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
+     * @return SummonerDTO
+     */
+    public function getByAccountId(string $encryptedAccountId);
 
-    public function getSummonerBySummonerName(string $summonerName): ?SummonerDTO;
+    /**
+     * Get a summoner by summoner name.
+     *
+     * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
+     * @return SummonerDTO
+     */
+    public function getBySummonerName(string $summonerName);
 
-    public function getSummonerByPUUID(string $encryptedPUUID): ?SummonerDTO;
+    /**
+     * Get a summoner by PUUID.
+     *
+     * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
+     * @return SummonerDTO
+     */
+    public function getByPUUID(string $encryptedPUUID);
 
-    public function getSummonerBySummonerId(string $encryptedSummonerId): ?SummonerDTO;
+    /**
+     * Get a summoner by summoner ID.
+     *
+     * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
+     * @return SummonerDTO
+     */
+    public function getBySummonerId(string $encryptedSummonerId);
 
-    public function getSummonerByAccessToken(string $accessToken): ?SummonerDTO;
+    /**
+     * Get a summoner by access token.
+     *
+     * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccessToken
+     * @return SummonerDTO
+     */
+    public function getByAccessToken(string $accessToken);
 }

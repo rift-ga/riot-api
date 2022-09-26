@@ -5,11 +5,11 @@ namespace Rift\RiotApi;
 class RequestData implements RequestDataInterface
 {
     public function __construct(
-        private readonly string $method,
-        private readonly string $path,
-        private readonly array $pathParams = [],
-        private readonly array $queryParams = [],
-        private readonly array $headers = [],
+        private string $method,
+        private string $path,
+        private array $pathParams = [],
+        private array $queryParams = [],
+        private array $headers = [],
     ) {
     }
 

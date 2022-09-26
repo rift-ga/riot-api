@@ -2,11 +2,13 @@
 
 namespace Rift\RiotApi;
 
+use GuzzleHttp\RequestOptions;
+
 class Client implements ClientInterface
 {
     private static array $options = [
         'apiKey' => null,
-        'url'    => 'https://eun1.api.riotgames.com',
+        'url' => 'https://eun1.api.riotgames.com',
     ];
 
     private \GuzzleHttp\Client $client;
@@ -20,28 +22,25 @@ class Client implements ClientInterface
     {
         $this->client = new \GuzzleHttp\Client([
             'base_uri' => static::$options['url'],
-            'timeout'  => 2.0,
-            'headers'  => [
+            'timeout' => 2.0,
+            'headers' => [
                 'X-Riot-Token' => static::$options['apiKey'],
             ],
         ]);
     }
 
-    public function send(RequestDataInterface $requestData, string $contentClass): ?ContentInterface
+    public function request(RequestDataInterface $requestData, string $output = null)
     {
-        try {
-            $response = $this->client->request(
-                $requestData->getMethod(),
-                strtr(
-                    $requestData->getPath(),
-                    $requestData->getPathParams()
-                )
-            );
-            $response = json_decode($response->getBody()->getContents(), true);
+        $response = $this->client->request(
+            method: $requestData->getMethod(),
+            uri: strtr($requestData->getPath(), $requestData->getPathParams()),
+            options: [
+                RequestOptions::QUERY => $requestData->getQueryParams()
+            ],
+        );
+        $response = json_decode($response->getBody()->getContents(), true);
 
-            return new $contentClass(...$response);
-        } catch (\Exception $e) {
-            return null;
-        }
+        return $output ? new $output(...$response) : $response;
     }
+
 }
