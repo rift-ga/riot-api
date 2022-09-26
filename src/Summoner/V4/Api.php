@@ -2,9 +2,9 @@
 
 namespace Rift\RiotApi\Summoner\V4;
 
-use Rift\RiotApi\Summoner\V4\Contents\SummonerDTO;
 use Rift\RiotApi\BaseApi;
 use Rift\RiotApi\RequestData;
+use Rift\RiotApi\Summoner\V4\Contents\SummonerDTO;
 
 class Api extends BaseApi implements Contract
 {
@@ -14,7 +14,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/lol/summoner/v4/summoners/by-account/{encryptedAccountId}',
             pathParams: [
-                '{encryptedAccountId}' => $encryptedAccountId
+                '{encryptedAccountId}' => $encryptedAccountId,
             ]
         ), SummonerDTO::class);
     }
@@ -25,7 +25,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/lol/summoner/v4/summoners/by-name/{summonerName}',
             pathParams: [
-                '{summonerName}' => $summonerName
+                '{summonerName}' => $summonerName,
             ]
         ), SummonerDTO::class);
     }
@@ -36,7 +36,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/lol/summoner/v4/summoners/by-puuid/{encryptedPUUID}',
             pathParams: [
-                '{encryptedPUUID}' => $encryptedPUUID
+                '{encryptedPUUID}' => $encryptedPUUID,
             ]
         ), SummonerDTO::class);
     }
@@ -47,7 +47,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/lol/summoner/v4/summoners/{encryptedSummonerId}',
             pathParams: [
-                '{encryptedSummonerId}' => $encryptedSummonerId
+                '{encryptedSummonerId}' => $encryptedSummonerId,
             ]
         ), SummonerDTO::class);
     }
@@ -58,7 +58,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/lol/summoner/v4/summoners/me',
             headers: [
-                'Authorization', $accessToken
+                'Authorization', $accessToken,
             ]
         ), SummonerDTO::class);
     }

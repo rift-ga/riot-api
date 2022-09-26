@@ -14,8 +14,8 @@ class SummonerDTO implements ContentInterface
         private string $id,
         private string $puuid,
         private int $summonerLevel,
-    )
-    {}
+    ) {
+    }
 
     public function getAccountId(): string
     {
@@ -51,5 +51,4 @@ class SummonerDTO implements ContentInterface
     {
         return $this->summonerLevel;
     }
-
 }
