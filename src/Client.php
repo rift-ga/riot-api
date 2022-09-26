@@ -6,7 +6,7 @@ class Client implements ClientInterface
 {
     private static array $options = [
         'apiKey' => null,
-        'url' => 'https://eun1.api.riotgames.com'
+        'url'    => 'https://eun1.api.riotgames.com',
     ];
 
     private \GuzzleHttp\Client $client;
@@ -20,10 +20,10 @@ class Client implements ClientInterface
     {
         $this->client = new \GuzzleHttp\Client([
             'base_uri' => static::$options['url'],
-            'timeout' => 2.0,
-            'headers' => [
-                'X-Riot-Token' => static::$options['apiKey']
-            ]
+            'timeout'  => 2.0,
+            'headers'  => [
+                'X-Riot-Token' => static::$options['apiKey'],
+            ],
         ]);
     }
 

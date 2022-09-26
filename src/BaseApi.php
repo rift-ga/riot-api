@@ -6,8 +6,6 @@ abstract class BaseApi
 {
     public function __construct(
         protected ClientInterface $client
-    )
-    {
-
+    ) {
     }
 }

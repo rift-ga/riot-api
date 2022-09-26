@@ -7,9 +7,9 @@ class RequestData implements RequestDataInterface
     public function __construct(
         private readonly string $method,
         private readonly string $path,
-        private readonly array  $pathParams = [],
-        private readonly array  $queryParams = [],
-        private readonly array  $headers = [],
+        private readonly array $pathParams = [],
+        private readonly array $queryParams = [],
+        private readonly array $headers = [],
     ) {
     }
 
