@@ -1,5 +1,7 @@
 # Riot Apis Client
 
+[![StyleCI](https://github.styleci.io/repos/540948663/shield?branch=main)](https://github.styleci.io/repos/540948663?branch=main)
+
 ## About
 This package fully implements APIs issued by [Riot Games](https://www.riotgames.com/) and provides a php client that allows you to use them in a simple way.
 
