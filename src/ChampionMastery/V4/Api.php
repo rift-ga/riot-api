@@ -9,9 +9,10 @@ use Rift\RiotApi\RequestData;
 class Api extends BaseApi implements Contract
 {
     /**
-     * Get all champion mastery entries sorted by number of champion points descending,
+     * Get all champion mastery entries sorted by number of champion points descending,.
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getAllChampionMasteries
+     *
      * @return ChampionMasteryDTO[]
      */
     public function getAllChampionMasteries(string $encryptedSummonerId)
@@ -31,6 +32,7 @@ class Api extends BaseApi implements Contract
      * Get a champion mastery by player ID and champion ID.
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getChampionMastery
+     *
      * @return ChampionMasteryDTO
      */
     public function getChampionMastery(string $encryptedSummonerId, string $championId)
@@ -51,6 +53,7 @@ class Api extends BaseApi implements Contract
      * Get specified number of top champion mastery entries sorted by number of champion points descending.
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getTopChampionMasteries
+     *
      * @return ChampionMasteryDTO[]
      */
     public function getTopChampionMasteries(string $encryptedSummonerId, int $count = 3)
@@ -62,7 +65,7 @@ class Api extends BaseApi implements Contract
                 '{encryptedSummonerId}' => $encryptedSummonerId,
             ],
             queryParams: [
-                'count' => $count
+                'count' => $count,
             ]
         );
 
@@ -73,6 +76,7 @@ class Api extends BaseApi implements Contract
      * Get a player's total champion mastery score, which is the sum of individual champion mastery levels.
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getChampionMasteryScore
+     *
      * @return int
      */
     public function getChampionMasteryScore(string $encryptedSummonerId)

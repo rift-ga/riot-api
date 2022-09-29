@@ -35,12 +35,11 @@ class Client implements ClientInterface
             method: $requestData->getMethod(),
             uri: strtr($requestData->getPath(), $requestData->getPathParams()),
             options: [
-                RequestOptions::QUERY => $requestData->getQueryParams()
+                RequestOptions::QUERY => $requestData->getQueryParams(),
             ],
         );
         $response = json_decode($response->getBody()->getContents(), true);
 
         return $output ? new $output(...$response) : $response;
     }
-
 }
