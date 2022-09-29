@@ -10,15 +10,15 @@ use Rift\RiotApi\ContentInterface;
 class ChampionMasteryDto implements ContentInterface
 {
     public function __construct(
-        private readonly int    $championPointsUntilNextLevel,
-        private readonly bool   $chestGranted,
-        private readonly int    $championId,
-        private readonly int    $lastPlayTime,
-        private readonly int    $championLevel,
+        private readonly int $championPointsUntilNextLevel,
+        private readonly bool $chestGranted,
+        private readonly int $championId,
+        private readonly int $lastPlayTime,
+        private readonly int $championLevel,
         private readonly string $summonerId,
-        private readonly int    $championPoints,
-        private readonly int    $championPointsSinceLastLevel,
-        private readonly int    $tokensEarned,
+        private readonly int $championPoints,
+        private readonly int $championPointsSinceLastLevel,
+        private readonly int $tokensEarned,
     ) {
     }
 

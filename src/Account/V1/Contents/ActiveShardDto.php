@@ -30,5 +30,4 @@ class ActiveShardDto implements ContentInterface
     {
         return $this->activeShard;
     }
-
 }

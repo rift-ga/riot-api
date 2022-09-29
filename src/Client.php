@@ -14,7 +14,6 @@ class Client implements ClientInterface
 
     private ?string $region = null;
 
-
     public static function initialize(array $options)
     {
         static::$options = array_merge(static::$options, $options);
@@ -43,7 +42,7 @@ class Client implements ClientInterface
             throw new ClientException('No region selected.');
         }
 
-        $uri = strtr("https://{region}.api.riotgames.com", ['{region}' => $this->region]);
+        $uri = strtr('https://{region}.api.riotgames.com', ['{region}' => $this->region]);
         $path = strtr($requestData->getPath(), $requestData->getPathParams());
 
         $response = $this->client->request(

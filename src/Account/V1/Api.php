@@ -71,7 +71,7 @@ class Api extends BaseApi implements Contract
     }
 
     /**
-     * Get active shard for a player
+     * Get active shard for a player.
      *
      * @see https://developer.riotgames.com/apis#account-v1/GET_getActiveShard
      *
