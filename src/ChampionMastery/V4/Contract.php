@@ -2,7 +2,7 @@
 
 namespace Rift\RiotApi\ChampionMastery\V4;
 
-use Rift\RiotApi\ChampionMastery\V4\Contents\ChampionMasteryDTO;
+use Rift\RiotApi\ChampionMastery\V4\Contents\ChampionMasteryDto;
 
 interface Contract
 {
@@ -11,7 +11,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getAllChampionMasteries
      *
-     * @return ChampionMasteryDTO[]
+     * @return ChampionMasteryDto[]
      */
     public function getAllChampionMasteries(string $encryptedSummonerId);
 
@@ -20,7 +20,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getChampionMastery
      *
-     * @return ChampionMasteryDTO
+     * @return ChampionMasteryDto
      */
     public function getChampionMastery(string $encryptedSummonerId, string $championId);
 
@@ -29,7 +29,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getTopChampionMasteries
      *
-     * @return ChampionMasteryDTO[]
+     * @return ChampionMasteryDto[]
      */
     public function getTopChampionMasteries(string $encryptedSummonerId, int $count = 3);
 

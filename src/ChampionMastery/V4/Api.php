@@ -3,7 +3,7 @@
 namespace Rift\RiotApi\ChampionMastery\V4;
 
 use Rift\RiotApi\BaseApi;
-use Rift\RiotApi\ChampionMastery\V4\Contents\ChampionMasteryDTO;
+use Rift\RiotApi\ChampionMastery\V4\Contents\ChampionMasteryDto;
 use Rift\RiotApi\RequestData;
 
 class Api extends BaseApi implements Contract
@@ -13,7 +13,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getAllChampionMasteries
      *
-     * @return ChampionMasteryDTO[]
+     * @return ChampionMasteryDto[]
      */
     public function getAllChampionMasteries(string $encryptedSummonerId)
     {
@@ -33,7 +33,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getChampionMastery
      *
-     * @return ChampionMasteryDTO
+     * @return ChampionMasteryDto
      */
     public function getChampionMastery(string $encryptedSummonerId, string $championId)
     {
@@ -46,7 +46,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData, output: ChampionMasteryDTO::class);
+        return $this->client->request(requestData: $requestData, output: ChampionMasteryDto::class);
     }
 
     /**
@@ -54,7 +54,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getTopChampionMasteries
      *
-     * @return ChampionMasteryDTO[]
+     * @return ChampionMasteryDto[]
      */
     public function getTopChampionMasteries(string $encryptedSummonerId, int $count = 3)
     {

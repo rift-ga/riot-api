@@ -7,18 +7,18 @@ use Rift\RiotApi\ContentInterface;
 /**
  * Contains single Champion Mastery information for player and champion combination.
  */
-class ChampionMasteryDTO implements ContentInterface
+class ChampionMasteryDto implements ContentInterface
 {
     public function __construct(
-        private int $championPointsUntilNextLevel,
-        private bool $chestGranted,
-        private int $championId,
-        private int $lastPlayTime,
-        private int $championLevel,
-        private string $summonerId,
-        private int $championPoints,
-        private int $championPointsSinceLastLevel,
-        private int $tokensEarned,
+        private readonly int    $championPointsUntilNextLevel,
+        private readonly bool   $chestGranted,
+        private readonly int    $championId,
+        private readonly int    $lastPlayTime,
+        private readonly int    $championLevel,
+        private readonly string $summonerId,
+        private readonly int    $championPoints,
+        private readonly int    $championPointsSinceLastLevel,
+        private readonly int    $tokensEarned,
     ) {
     }
 

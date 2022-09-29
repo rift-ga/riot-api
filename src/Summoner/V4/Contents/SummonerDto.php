@@ -7,16 +7,16 @@ use Rift\RiotApi\ContentInterface;
 /**
  * Represents a summoner.
  */
-class SummonerDTO implements ContentInterface
+class SummonerDto implements ContentInterface
 {
     public function __construct(
-        private string $accountId,
-        private int $profileIconId,
-        private string $revisionDate,
-        private string $name,
-        private string $id,
-        private string $puuid,
-        private int $summonerLevel,
+        private readonly string $accountId,
+        private readonly int    $profileIconId,
+        private readonly string $revisionDate,
+        private readonly string $name,
+        private readonly string $id,
+        private readonly string $puuid,
+        private readonly int    $summonerLevel,
     ) {
     }
 

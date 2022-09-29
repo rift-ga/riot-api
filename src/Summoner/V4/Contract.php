@@ -2,7 +2,7 @@
 
 namespace Rift\RiotApi\Summoner\V4;
 
-use Rift\RiotApi\Summoner\V4\Contents\SummonerDTO;
+use Rift\RiotApi\Summoner\V4\Contents\SummonerDto;
 
 interface Contract
 {
@@ -11,7 +11,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getByAccountId(string $encryptedAccountId);
 
@@ -20,7 +20,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getBySummonerName(string $summonerName);
 
@@ -29,7 +29,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getByPUUID(string $encryptedPUUID);
 
@@ -38,7 +38,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getBySummonerId(string $encryptedSummonerId);
 
@@ -47,7 +47,7 @@ interface Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccessToken
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getByAccessToken(string $accessToken);
 }

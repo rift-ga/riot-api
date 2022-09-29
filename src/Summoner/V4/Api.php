@@ -4,7 +4,7 @@ namespace Rift\RiotApi\Summoner\V4;
 
 use Rift\RiotApi\BaseApi;
 use Rift\RiotApi\RequestData;
-use Rift\RiotApi\Summoner\V4\Contents\SummonerDTO;
+use Rift\RiotApi\Summoner\V4\Contents\SummonerDto;
 
 class Api extends BaseApi implements Contract
 {
@@ -13,7 +13,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getByAccountId(string $encryptedAccountId)
     {
@@ -25,7 +25,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData, output: SummonerDTO::class);
+        return $this->client->request(requestData: $requestData, output: SummonerDto::class);
     }
 
     /**
@@ -33,7 +33,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getBySummonerName(string $summonerName)
     {
@@ -45,7 +45,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData, output: SummonerDTO::class);
+        return $this->client->request(requestData: $requestData, output: SummonerDto::class);
     }
 
     /**
@@ -53,7 +53,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getByPUUID(string $encryptedPUUID)
     {
@@ -65,7 +65,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData, output: SummonerDTO::class);
+        return $this->client->request(requestData: $requestData, output: SummonerDto::class);
     }
 
     /**
@@ -73,7 +73,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getBySummonerId(string $encryptedSummonerId)
     {
@@ -85,7 +85,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData, output: SummonerDTO::class);
+        return $this->client->request(requestData: $requestData, output: SummonerDto::class);
     }
 
     /**
@@ -93,7 +93,7 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccessToken
      *
-     * @return SummonerDTO
+     * @return SummonerDto
      */
     public function getByAccessToken(string $accessToken)
     {
@@ -105,6 +105,6 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData, output: SummonerDTO::class);
+        return $this->client->request(requestData: $requestData, output: SummonerDto::class);
     }
 }
