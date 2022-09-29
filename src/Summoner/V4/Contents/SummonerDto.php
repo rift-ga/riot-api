@@ -11,12 +11,12 @@ class SummonerDto implements ContentInterface
 {
     public function __construct(
         private readonly string $accountId,
-        private readonly int    $profileIconId,
+        private readonly int $profileIconId,
         private readonly string $revisionDate,
         private readonly string $name,
         private readonly string $id,
         private readonly string $puuid,
-        private readonly int    $summonerLevel,
+        private readonly int $summonerLevel,
     ) {
     }
 

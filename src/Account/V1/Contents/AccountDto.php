@@ -10,7 +10,7 @@ use Rift\RiotApi\ContentInterface;
 class AccountDto implements ContentInterface
 {
     public function __construct(
-        private readonly string  $puuid,
+        private readonly string $puuid,
         private readonly ?string $gameName = null,
         private readonly ?string $tagLine = null,
     ) {
