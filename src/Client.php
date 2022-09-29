@@ -8,10 +8,12 @@ class Client implements ClientInterface
 {
     private static array $options = [
         'apiKey' => null,
-        'url' => 'https://eun1.api.riotgames.com',
     ];
 
     private \GuzzleHttp\Client $client;
+
+    private ?string $region = null;
+
 
     public static function initialize(array $options)
     {
@@ -21,7 +23,6 @@ class Client implements ClientInterface
     public function __construct()
     {
         $this->client = new \GuzzleHttp\Client([
-            'base_uri' => static::$options['url'],
             'timeout' => 2.0,
             'headers' => [
                 'X-Riot-Token' => static::$options['apiKey'],
@@ -29,11 +30,25 @@ class Client implements ClientInterface
         ]);
     }
 
+    public function setRegion(Region $region): static
+    {
+        $this->region = $region->value;
+
+        return $this;
+    }
+
     public function request(RequestDataInterface $requestData, string $output = null)
     {
+        if (is_null($this->region)) {
+            throw new ClientException('No region selected.');
+        }
+
+        $uri = strtr("https://{region}.api.riotgames.com", ['{region}' => $this->region]);
+        $path = strtr($requestData->getPath(), $requestData->getPathParams());
+
         $response = $this->client->request(
             method: $requestData->getMethod(),
-            uri: strtr($requestData->getPath(), $requestData->getPathParams()),
+            uri: $uri . $path,
             options: [
                 RequestOptions::QUERY => $requestData->getQueryParams(),
             ],
