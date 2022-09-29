@@ -20,7 +20,7 @@ composer require rift/riot-api dev-main
 ## Dependencies
 
 ```json
-"php": "^8.0",
+"php": "^8.1",
 "guzzlehttp/guzzle": "^7.5"
 ```
 
