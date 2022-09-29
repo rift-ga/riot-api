@@ -10,6 +10,7 @@ interface Contract
      * Get a summoner by account ID.
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccountId
+     *
      * @return SummonerDTO
      */
     public function getByAccountId(string $encryptedAccountId);
@@ -18,6 +19,7 @@ interface Contract
      * Get a summoner by summoner name.
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerName
+     *
      * @return SummonerDTO
      */
     public function getBySummonerName(string $summonerName);
@@ -26,6 +28,7 @@ interface Contract
      * Get a summoner by PUUID.
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByPUUID
+     *
      * @return SummonerDTO
      */
     public function getByPUUID(string $encryptedPUUID);
@@ -34,6 +37,7 @@ interface Contract
      * Get a summoner by summoner ID.
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getBySummonerId
+     *
      * @return SummonerDTO
      */
     public function getBySummonerId(string $encryptedSummonerId);
@@ -42,6 +46,7 @@ interface Contract
      * Get a summoner by access token.
      *
      * @see https://developer.riotgames.com/apis#summoner-v4/GET_getByAccessToken
+     *
      * @return SummonerDTO
      */
     public function getByAccessToken(string $accessToken);
