@@ -9,7 +9,7 @@ use Rift\RiotApi\RequestData;
 class Api extends BaseApi implements Contract
 {
     /**
-     * Get all champion mastery entries sorted by number of champion points descending,.
+     * Get all champion mastery entries sorted by number of champion points descending.
      *
      * @see https://developer.riotgames.com/apis#champion-mastery-v4/GET_getAllChampionMasteries
      *
