@@ -36,5 +36,4 @@ class ChampionInfo implements ContentInterface
     {
         return $this->freeChampionIds;
     }
-
 }
