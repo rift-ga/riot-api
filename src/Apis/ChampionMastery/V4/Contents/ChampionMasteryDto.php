@@ -1,8 +1,8 @@
 <?php
 
-namespace Rift\RiotApi\ChampionMastery\V4\Contents;
+namespace Rift\RiotApi\Apis\ChampionMastery\V4\Contents;
 
-use Rift\RiotApi\ContentInterface;
+use Rift\RiotApi\Interfaces\ContentInterface;
 
 /**
  * Contains single Champion Mastery information for player and champion combination.

@@ -1,6 +1,8 @@
 <?php
 
-namespace Rift\RiotApi;
+namespace Rift\RiotApi\Abstracts;
+
+use Rift\RiotApi\Interfaces\ClientInterface;
 
 abstract class BaseApi
 {

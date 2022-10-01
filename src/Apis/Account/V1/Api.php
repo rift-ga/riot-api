@@ -1,10 +1,10 @@
 <?php
 
-namespace Rift\RiotApi\Account\V1;
+namespace Rift\RiotApi\Apis\Account\V1;
 
-use Rift\RiotApi\Account\V1\Contents\AccountDto;
-use Rift\RiotApi\Account\V1\Contents\ActiveShardDto;
-use Rift\RiotApi\BaseApi;
+use Rift\RiotApi\Abstracts\BaseApi;
+use Rift\RiotApi\Apis\Account\V1\Contents\AccountDto;
+use Rift\RiotApi\Apis\Account\V1\Contents\ActiveShardDto;
 use Rift\RiotApi\RequestData;
 
 class Api extends BaseApi implements Contract

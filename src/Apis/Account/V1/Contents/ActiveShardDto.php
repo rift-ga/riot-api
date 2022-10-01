@@ -1,8 +1,8 @@
 <?php
 
-namespace Rift\RiotApi\Account\V1\Contents;
+namespace Rift\RiotApi\Apis\Account\V1\Contents;
 
-use Rift\RiotApi\ContentInterface;
+use Rift\RiotApi\Interfaces\ContentInterface;
 
 /**
  * Represents a summoner.

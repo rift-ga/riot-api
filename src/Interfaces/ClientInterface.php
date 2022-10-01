@@ -1,6 +1,8 @@
 <?php
 
-namespace Rift\RiotApi;
+namespace Rift\RiotApi\Interfaces;
+
+use Rift\RiotApi\Enums\Region;
 
 interface ClientInterface
 {

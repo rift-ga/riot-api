@@ -1,8 +1,9 @@
 <?php
 
-namespace Rift\RiotApi\Account\V1;
+namespace Rift\RiotApi\Apis\Account\V1;
 
-use Rift\RiotApi\Account\V1\Contents\AccountDto;
+use Rift\RiotApi\Account\V1\ActiveShardDto;
+use Rift\RiotApi\Apis\Account\V1\Contents\AccountDto;
 
 interface Contract
 {

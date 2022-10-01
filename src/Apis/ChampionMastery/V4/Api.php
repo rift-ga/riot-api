@@ -1,9 +1,9 @@
 <?php
 
-namespace Rift\RiotApi\ChampionMastery\V4;
+namespace Rift\RiotApi\Apis\ChampionMastery\V4;
 
-use Rift\RiotApi\BaseApi;
-use Rift\RiotApi\ChampionMastery\V4\Contents\ChampionMasteryDto;
+use Rift\RiotApi\Abstracts\BaseApi;
+use Rift\RiotApi\Apis\ChampionMastery\V4\Contents\ChampionMasteryDto;
 use Rift\RiotApi\RequestData;
 
 class Api extends BaseApi implements Contract

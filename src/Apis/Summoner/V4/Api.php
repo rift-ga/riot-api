@@ -1,10 +1,10 @@
 <?php
 
-namespace Rift\RiotApi\Summoner\V4;
+namespace Rift\RiotApi\Apis\Summoner\V4;
 
-use Rift\RiotApi\BaseApi;
+use Rift\RiotApi\Abstracts\BaseApi;
+use Rift\RiotApi\Apis\Summoner\V4\Contents\SummonerDto;
 use Rift\RiotApi\RequestData;
-use Rift\RiotApi\Summoner\V4\Contents\SummonerDto;
 
 class Api extends BaseApi implements Contract
 {

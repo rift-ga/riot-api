@@ -1,8 +1,8 @@
 <?php
 
-namespace Rift\RiotApi\ChampionMastery\V4;
+namespace Rift\RiotApi\Apis\ChampionMastery\V4;
 
-use Rift\RiotApi\ChampionMastery\V4\Contents\ChampionMasteryDto;
+use Rift\RiotApi\Apis\ChampionMastery\V4\Contents\ChampionMasteryDto;
 
 interface Contract
 {

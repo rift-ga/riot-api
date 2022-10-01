@@ -1,6 +1,6 @@
 <?php
 
-namespace Rift\RiotApi;
+namespace Rift\RiotApi\Interfaces;
 
 interface RequestDataInterface
 {

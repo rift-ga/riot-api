@@ -3,6 +3,10 @@
 namespace Rift\RiotApi;
 
 use GuzzleHttp\RequestOptions;
+use Rift\RiotApi\Enums\Region;
+use Rift\RiotApi\Exceptions\ClientException;
+use Rift\RiotApi\Interfaces\ClientInterface;
+use Rift\RiotApi\Interfaces\RequestDataInterface;
 
 class Client implements ClientInterface
 {
@@ -10,7 +14,7 @@ class Client implements ClientInterface
         'apiKey' => null,
     ];
 
-    private \GuzzleHttp\Client $client;
+    private \GuzzleHttp\Client $httpClient;
 
     private ?string $region = null;
 
@@ -21,7 +25,7 @@ class Client implements ClientInterface
 
     public function __construct()
     {
-        $this->client = new \GuzzleHttp\Client([
+        $this->httpClient = new \GuzzleHttp\Client([
             'timeout' => 2.0,
             'headers' => [
                 'X-Riot-Token' => static::$options['apiKey'],
@@ -45,7 +49,7 @@ class Client implements ClientInterface
         $uri = strtr('https://{region}.api.riotgames.com', ['{region}' => $this->region]);
         $path = strtr($requestData->getPath(), $requestData->getPathParams());
 
-        $response = $this->client->request(
+        $response = $this->httpClient->request(
             method: $requestData->getMethod(),
             uri: $uri . $path,
             options: [
