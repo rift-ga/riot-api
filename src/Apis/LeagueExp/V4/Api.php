@@ -17,6 +17,7 @@ class Api extends BaseApi implements Contract
      * At the request of a GitHub issue, we've added an experimental league-exp-v4 endpoint. This new endpoint is a
      * duplicate of the endpoint in league-v4, but it also supports the apex tiers (Challenger, Grandmaster, and Master).
      * In November we'll evaluate whether this endpoint delivers enough value to merit its continual support.
+     *
      * @see https://developer.riotgames.com/apis#league-exp-v4/GET_getLeagueEntries
      *
      * @return LeagueEntryDTO[]
@@ -32,7 +33,7 @@ class Api extends BaseApi implements Contract
                 '{division}' => $division->name,
             ],
             queryParams: [
-                'page' => $page
+                'page' => $page,
             ]
         );
 
