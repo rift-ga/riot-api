@@ -2,32 +2,16 @@
 
 namespace Rift\RiotApi\Apis\Account\V1\Contents;
 
-use Rift\RiotApi\Interfaces\ContentInterface;
+use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
  * Represents an account.
  */
-class AccountDto implements ContentInterface
+class AccountDto extends BaseContent
 {
-    public function __construct(
-        private readonly string $puuid,
-        private readonly ?string $gameName = null,
-        private readonly ?string $tagLine = null,
-    ) {
-    }
-
-    public function getPuuid(): string
-    {
-        return $this->puuid;
-    }
-
-    public function getGameName(): ?string
-    {
-        return $this->gameName;
-    }
-
-    public function getTagLine(): ?string
-    {
-        return $this->tagLine;
-    }
+    final protected function __construct(
+        public readonly string $puuid,
+        public readonly ?string $gameName = null,
+        public readonly ?string $tagLine = null,
+    ) {}
 }

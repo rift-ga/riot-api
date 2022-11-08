@@ -25,7 +25,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData);
+        return $this->client->request(requestData: $requestData, output: ChampionMasteryDto::class, arrayOutput: true);
     }
 
     /**
@@ -69,7 +69,7 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData);
+        return $this->client->request(requestData: $requestData, output: ChampionMasteryDto::class, arrayOutput: true);
     }
 
     /**

@@ -2,35 +2,14 @@
 
 namespace Rift\RiotApi\Apis\Clash\V1\Contents;
 
-use Rift\RiotApi\Interfaces\ContentInterface;
+use Rift\RiotApi\Abstracts\BaseContent;
 
-class TournamentPhaseDto implements ContentInterface
+class TournamentPhaseDto extends BaseContent
 {
-    public function __construct(
-        private readonly int $id,
-        private readonly int $registrationTime,
-        private readonly int $startTime,
-        private readonly bool $cancelled,
-    ) {
-    }
-
-    public function getId(): int
-    {
-        return $this->id;
-    }
-
-    public function getRegistrationTime(): int
-    {
-        return $this->registrationTime;
-    }
-
-    public function getStartTime(): int
-    {
-        return $this->startTime;
-    }
-
-    public function isCancelled(): bool
-    {
-        return $this->cancelled;
-    }
+    final protected function __construct(
+        public readonly int $id,
+        public readonly int $registrationTime,
+        public readonly int $startTime,
+        public readonly bool $cancelled,
+    ) {}
 }

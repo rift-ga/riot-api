@@ -8,5 +8,5 @@ interface ClientInterface
 {
     public function setRegion(Region $region): static;
 
-    public function request(RequestDataInterface $requestData, string $output = null);
+    public function request(RequestDataInterface $requestData, ContentInterface|string $output = null, bool $arrayOutput = false);
 }

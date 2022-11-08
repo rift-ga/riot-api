@@ -6,6 +6,7 @@ use GuzzleHttp\RequestOptions;
 use Rift\RiotApi\Enums\Region;
 use Rift\RiotApi\Exceptions\ClientException;
 use Rift\RiotApi\Interfaces\ClientInterface;
+use Rift\RiotApi\Interfaces\ContentInterface;
 use Rift\RiotApi\Interfaces\RequestDataInterface;
 
 class Client implements ClientInterface
@@ -40,7 +41,7 @@ class Client implements ClientInterface
         return $this;
     }
 
-    public function request(RequestDataInterface $requestData, string $output = null)
+    public function request(RequestDataInterface $requestData, ContentInterface|string $output = null, bool $arrayOutput = false)
     {
         if (is_null($this->region)) {
             throw new ClientException('No region selected.');
@@ -56,8 +57,10 @@ class Client implements ClientInterface
                 RequestOptions::QUERY => $requestData->getQueryParams(),
             ],
         );
-        $response = json_decode($response->getBody()->getContents(), true);
+        $responseData = json_decode($response->getBody()->getContents(), true);
 
-        return $output ? new $output(...$response) : $response;
+        return $arrayOutput ?
+            array_map(fn($item) => $output::create(...$item), $responseData) :
+            $output::create(...$responseData);
     }
 }

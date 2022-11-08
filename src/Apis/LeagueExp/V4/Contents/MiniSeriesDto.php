@@ -2,35 +2,14 @@
 
 namespace Rift\RiotApi\Apis\LeagueExp\V4\Contents;
 
-use Rift\RiotApi\Interfaces\ContentInterface;
+use Rift\RiotApi\Abstracts\BaseContent;
 
-class MiniSeriesDto implements ContentInterface
+class MiniSeriesDto extends BaseContent
 {
-    public function __construct(
-        private readonly int $losses,
-        private readonly string $progress,
-        private readonly int $target,
-        private readonly int $wins,
-    ) {
-    }
-
-    public function getLosses(): int
-    {
-        return $this->losses;
-    }
-
-    public function getProgress(): string
-    {
-        return $this->progress;
-    }
-
-    public function getTarget(): int
-    {
-        return $this->target;
-    }
-
-    public function getWins(): int
-    {
-        return $this->wins;
-    }
+    final protected function __construct(
+        public readonly int $losses,
+        public readonly string $progress,
+        public readonly int $target,
+        public readonly int $wins,
+    ) {}
 }

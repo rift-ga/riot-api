@@ -37,6 +37,6 @@ class Api extends BaseApi implements Contract
             ]
         );
 
-        return $this->client->request(requestData: $requestData);
+        return $this->client->request(requestData: $requestData, output: LeagueEntryDto::class, arrayOutput: true);
     }
 }
