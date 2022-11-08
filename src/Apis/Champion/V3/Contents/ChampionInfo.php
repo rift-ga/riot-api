@@ -16,5 +16,6 @@ class ChampionInfo extends BaseContent
         public readonly int $maxNewPlayerLevel,
         public readonly array $freeChampionIdsForNewPlayers,
         public readonly array $freeChampionIds,
-    ) {}
+    ) {
+    }
 }

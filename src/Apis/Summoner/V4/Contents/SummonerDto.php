@@ -17,5 +17,6 @@ class SummonerDto extends BaseContent
         public readonly string $id,
         public readonly string $puuid,
         public readonly int $summonerLevel,
-    ) {}
+    ) {
+    }
 }

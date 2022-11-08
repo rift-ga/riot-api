@@ -19,5 +19,6 @@ class ChampionMasteryDto extends BaseContent
         public readonly int $championPoints,
         public readonly int $championPointsSinceLastLevel,
         public readonly int $tokensEarned,
-    ) {}
+    ) {
+    }
 }

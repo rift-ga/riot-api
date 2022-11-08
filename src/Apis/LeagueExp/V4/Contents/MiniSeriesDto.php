@@ -11,5 +11,6 @@ class MiniSeriesDto extends BaseContent
         public readonly string $progress,
         public readonly int $target,
         public readonly int $wins,
-    ) {}
+    ) {
+    }
 }

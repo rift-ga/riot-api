@@ -13,5 +13,6 @@ class AccountDto extends BaseContent
         public readonly string $puuid,
         public readonly ?string $gameName = null,
         public readonly ?string $tagLine = null,
-    ) {}
+    ) {
+    }
 }

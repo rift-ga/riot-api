@@ -11,5 +11,6 @@ class PlayerDto extends BaseContent
         public readonly string $teamId,
         public readonly string $position,
         public readonly string $role,
-    ) {}
+    ) {
+    }
 }
