@@ -60,7 +60,7 @@ class Client implements ClientInterface
         $responseData = json_decode($response->getBody()->getContents(), true);
 
         return $arrayOutput ?
-            array_map(fn($item) => $output::create(...$item), $responseData) :
+            array_map(fn ($item) => $output::create(...$item), $responseData) :
             $output::create(...$responseData);
     }
 }

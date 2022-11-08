@@ -21,5 +21,6 @@ class LeagueEntryDto extends BaseContent
         public readonly bool $freshBlood,
         public readonly bool $inactive,
         public readonly ?MiniSeriesDto $miniSeries = null,
-    ) {}
+    ) {
+    }
 }

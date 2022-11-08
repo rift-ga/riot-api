@@ -13,5 +13,6 @@ class ActiveShardDto extends BaseContent
         public readonly string $puuid,
         public readonly string $game,
         public readonly string $activeShard
-    ) {}
+    ) {
+    }
 }

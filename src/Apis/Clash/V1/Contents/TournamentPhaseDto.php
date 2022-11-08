@@ -11,5 +11,6 @@ class TournamentPhaseDto extends BaseContent
         public readonly int $registrationTime,
         public readonly int $startTime,
         public readonly bool $cancelled,
-    ) {}
+    ) {
+    }
 }

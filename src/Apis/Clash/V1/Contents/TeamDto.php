@@ -18,5 +18,6 @@ class TeamDto extends BaseContent
         public readonly string $captain,
         public readonly string $abbreviation,
         public readonly array $players,
-    ) {}
+    ) {
+    }
 }

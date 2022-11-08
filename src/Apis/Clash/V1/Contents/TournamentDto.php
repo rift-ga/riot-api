@@ -15,5 +15,6 @@ class TournamentDto extends BaseContent
         public readonly string $nameKey,
         public readonly string $nameKeySecondary,
         public readonly array $schedule,
-    ) {}
+    ) {
+    }
 }
