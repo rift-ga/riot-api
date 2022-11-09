@@ -1,6 +1,7 @@
 # PHP Wrapper for Riot Apis
 
-[![StyleCI](https://github.styleci.io/repos/540948663/shield?branch=main)](https://github.styleci.io/repos/540948663?branch=main)
+[![License](https://img.shields.io/packagist/l/rift/riot-api?color=blue)](./LICENSE.md)
+[![StyleCI](https://github.styleci.io/repos/540948663/shield?style=flat&branch=main)](https://github.styleci.io/repos/540948663?branch=main)
 
 ## About
 This package provides php wrappers for APIs issued by [Riot Games](https://www.riotgames.com/):  
