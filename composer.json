@@ -1,13 +1,14 @@
 {
     "name": "rift/riot-api",
-    "description": "Riot APIs Client",
+    "description": "PHP Wrapper for Riot Apis",
     "keywords": [
         "riot",
-        "lol",
-        "league of legends",
+        "riotgames",
         "api",
+        "wrapper",
         "client",
-        "riotgames"
+        "lol",
+        "league of legends"
     ],
     "type": "library",
     "license": "MIT",
