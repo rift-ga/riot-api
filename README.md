@@ -5,12 +5,12 @@
 
 ## About
 This package provides php wrappers for APIs issued by [Riot Games](https://www.riotgames.com/):  
-- [ACCOUNT-V1](https://developer.riotgames.com/apis#account-v1) <sub><sup>Accounts RSO</sup></sup>
-- [CHAMPION-MASTERY-V4](https://developer.riotgames.com/apis#champion-mastery-v4) <sub><sup>League of Legends</sup></sup>
-- [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) <sub><sup>League of Legends</sup></sup>
-- [CLASH-V1](https://developer.riotgames.com/apis#clash-v1) <sub><sup>League of Legends</sup></sup>
-- [LEAGUE-EXP-V4](https://developer.riotgames.com/apis#league-exp-v4) <sub><sup>League of Legends</sup></sup>
-- [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sup>
+- [ACCOUNT-V1](https://developer.riotgames.com/apis#account-v1) <sub><sup>Accounts RSO</sup></sub>
+- [CHAMPION-MASTERY-V4](https://developer.riotgames.com/apis#champion-mastery-v4) <sub><sup>League of Legends</sup></sub>
+- [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) <sub><sup>League of Legends</sup></sub>
+- [CLASH-V1](https://developer.riotgames.com/apis#clash-v1) <sub><sup>League of Legends</sup></sub>
+- [LEAGUE-EXP-V4](https://developer.riotgames.com/apis#league-exp-v4) <sub><sup>League of Legends</sup></sub>
+- [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sub>
 
 ## Installation
 
