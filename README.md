@@ -15,7 +15,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 ## Installation
 
 ```bash
-composer require rift/riot-api dev-main
+composer require rift/riot-api
 ```
 
 ## Official Documentation
