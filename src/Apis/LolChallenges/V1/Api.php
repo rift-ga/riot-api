@@ -83,7 +83,7 @@ class Api extends BaseApi implements Contract
                 '{level}' => $level->name,
             ],
             queryParams: [
-                'limit' => $limit
+                'limit' => $limit,
             ],
         );
 

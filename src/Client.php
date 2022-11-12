@@ -61,7 +61,7 @@ class Client implements ClientInterface
 
         return match (true) {
             is_null($output) => $responseData,
-            $arrayOutput => array_map(fn($item) => $output::create(...$item), $responseData),
+            $arrayOutput => array_map(fn ($item) => $output::create(...$item), $responseData),
             default => $output::create(...$responseData),
         };
     }
