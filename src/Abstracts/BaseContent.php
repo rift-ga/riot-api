@@ -17,7 +17,12 @@ abstract class BaseContent implements ContentInterface
             if (!($args[$param->getName()] ?? false) || !is_array($args[$param->getName()])) {
                 continue;
             }
-            $args[$param->getName()] = new ($param->getType()->getName())(...$args[$param->getName()]);
+            $class = $param->getType()->getName();
+            if (is_subclass_of($class, ContentInterface::class)) {
+                $args[$param->getName()] = $class::create(...$args[$param->getName()]);
+            } else {
+                $args[$param->getName()] = new $class(...$args[$param->getName()]);
+            }
         }
 
         return new static(...$args);
