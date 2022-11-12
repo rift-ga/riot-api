@@ -15,5 +15,6 @@ class LeagueListDto extends BaseContent
         public readonly string $tier,
         public readonly string $name,
         public readonly string $queue,
-    ) {}
+    ) {
+    }
 }

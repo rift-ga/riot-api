@@ -5,10 +5,10 @@ namespace Rift\RiotApi\Apis\LeagueExp\V4\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $summonerId Player's summonerId (encrypted).
- * @property string $rank The player's division within a tier.
- * @property int $wins Winning team on Summoners Rift. First placement in Teamfight Tactics.
- * @property int $losses Losing team on Summoners Rift. Second through eighth placement in Teamfight Tactics.
+ * @property int    $summonerId Player's summonerId (encrypted).
+ * @property string $rank       The player's division within a tier.
+ * @property int    $wins       Winning team on Summoners Rift. First placement in Teamfight Tactics.
+ * @property int    $losses     Losing team on Summoners Rift. Second through eighth placement in Teamfight Tactics.
  */
 class LeagueEntryDto extends BaseContent
 {
