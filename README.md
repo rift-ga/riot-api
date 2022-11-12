@@ -10,6 +10,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) <sub><sup>League of Legends</sup></sub>
 - [CLASH-V1](https://developer.riotgames.com/apis#clash-v1) <sub><sup>League of Legends</sup></sub>
 - [LEAGUE-EXP-V4](https://developer.riotgames.com/apis#league-exp-v4) <sub><sup>League of Legends</sup></sub>
+- [LEAGUE-V4](https://developer.riotgames.com/apis#league-v4) <sub><sup>League of Legends</sup></sub>
 - [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sub>
 
 ## Installation
