@@ -12,5 +12,9 @@ interface RequestDataInterface
 
     public function getQueryParams(): array;
 
+    public function getBodyParams(): array;
+
     public function getHeaders(): array;
+
+    public function getBody(): ?string;
 }

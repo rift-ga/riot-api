@@ -11,6 +11,7 @@ class RequestData implements RequestDataInterface
         private readonly string $path,
         private readonly array $pathParams = [],
         private readonly array $queryParams = [],
+        private readonly array $bodyParams = [],
         private readonly array $headers = [],
     ) {
     }
@@ -35,8 +36,18 @@ class RequestData implements RequestDataInterface
         return $this->queryParams;
     }
 
+    public function getBodyParams(): array
+    {
+        return $this->bodyParams;
+    }
+
     public function getHeaders(): array
     {
         return $this->headers;
+    }
+
+    public function getBody(): ?string
+    {
+        return $this->getBodyParams() ? json_encode($this->getBodyParams()) : null;
     }
 }

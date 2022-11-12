@@ -56,6 +56,7 @@ class Client implements ClientInterface
             uri: $uri . $path,
             options: [
                 RequestOptions::QUERY => $requestData->getQueryParams(),
+                RequestOptions::BODY => $requestData->getBody(),
             ],
         );
         $responseData = json_decode($response->getBody()->getContents(), true);
