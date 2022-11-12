@@ -23,4 +23,5 @@ enum Region: string
     case ESPORTS = 'esports';
     case EUROPE = 'europe';
     case SEA = 'sea';
+    case APAC = 'apac';
 }
