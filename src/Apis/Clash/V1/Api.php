@@ -21,13 +21,13 @@ class Api extends BaseApi implements Contract
      *
      * @return PlayerDto[]
      */
-    public function getPlayersBySummoner(string $summonerId)
+    public function getPlayersBySummoner(string $encryptedSummonerId)
     {
         $requestData = new RequestData(
             method: 'GET',
-            path: '/lol/clash/v1/players/by-summoner/{summonerId}',
+            path: '/lol/clash/v1/players/by-summoner/{encryptedSummonerId}',
             pathParams: [
-                '{summonerId}' => $summonerId,
+                '{encryptedSummonerId}' => $encryptedSummonerId,
             ]
         );
 

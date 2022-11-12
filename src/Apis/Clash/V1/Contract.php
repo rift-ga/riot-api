@@ -19,7 +19,7 @@ interface Contract
      *
      * @return PlayerDto[]
      */
-    public function getPlayersBySummoner(string $summonerId);
+    public function getPlayersBySummoner(string $encryptedSummonerId);
 
     /**
      * Get team by ID.
