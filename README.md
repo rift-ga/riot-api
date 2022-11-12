@@ -13,6 +13,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [LEAGUE-V4](https://developer.riotgames.com/apis#league-v4) <sub><sup>League of Legends</sup></sub>
 - [LOL-CHALLENGES-V4](https://developer.riotgames.com/apis#lol-challenges-v1) <sub><sup>League of Legends</sup></sub>
 - [LOL-STATUS-V3](https://developer.riotgames.com/apis#lol-status-v3) <sub><sup>League of Legends</sup></sub>
+- [LOL-STATUS-V4](https://developer.riotgames.com/apis#lol-status-v4) <sub><sup>Teamfight Tactics</sup></sub>
 - [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sub>
 
 ## Installation
