@@ -41,7 +41,7 @@ class Api extends BaseApi implements Contract
             method: 'POST',
             path: '/lor/deck/v1/decks/me',
             bodyParams: [
-                'deck' => $deck
+                'deck' => $deck,
             ],
         );
 

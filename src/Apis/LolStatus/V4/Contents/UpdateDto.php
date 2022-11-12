@@ -5,7 +5,7 @@ namespace Rift\RiotApi\Apis\LolStatus\V4\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string[] $publish_locations (Legal values: riotclient, riotstatus, game)
+ * @property string[]     $publish_locations (Legal values: riotclient, riotstatus, game)
  * @property ContentDto[] $translations
  */
 class UpdateDto extends BaseContent
