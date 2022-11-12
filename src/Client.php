@@ -13,6 +13,7 @@ class Client implements ClientInterface
 {
     private static array $options = [
         'apiKey' => null,
+        'timeout' => 2.0,
     ];
 
     private \GuzzleHttp\Client $httpClient;
@@ -27,7 +28,7 @@ class Client implements ClientInterface
     public function __construct()
     {
         $this->httpClient = new \GuzzleHttp\Client([
-            'timeout' => 2.0,
+            'timeout' => static::$options['timeout'],
             'headers' => [
                 'X-Riot-Token' => static::$options['apiKey'],
             ],
