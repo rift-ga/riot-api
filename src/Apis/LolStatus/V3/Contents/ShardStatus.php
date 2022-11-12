@@ -5,7 +5,7 @@ namespace Rift\RiotApi\Apis\LolStatus\V3\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string[] $locales
+ * @property string[]  $locales
  * @property Service[] $services
  */
 class ShardStatus extends BaseContent
