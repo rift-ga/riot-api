@@ -70,7 +70,7 @@ class Api extends BaseApi implements Contract
                 '{division}' => $division->name,
             ],
             queryParams: [
-                'page' => $page
+                'page' => $page,
             ],
         );
 

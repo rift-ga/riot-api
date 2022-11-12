@@ -5,8 +5,8 @@ namespace Rift\RiotApi\Apis\League\V4\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $wins Winning team on Summoners Rift.
- * @property int $losses Losing team on Summoners Rift.
+ * @property int $wins       Winning team on Summoners Rift.
+ * @property int $losses     Losing team on Summoners Rift.
  * @property int $summonerId Player's encrypted summonerId.
  */
 class LeagueItemDto extends BaseContent
@@ -23,5 +23,6 @@ class LeagueItemDto extends BaseContent
         public readonly int $leaguePoints,
         public readonly int $losses,
         public readonly string $summonerId,
-    ) {}
+    ) {
+    }
 }
