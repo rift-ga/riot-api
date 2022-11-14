@@ -5,8 +5,8 @@ namespace Rift\RiotApi\Apis\Match\V5\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $dataVersion Match data version.
- * @property string $matchId Match id.
+ * @property string   $dataVersion  Match data version.
+ * @property string   $matchId      Match id.
  * @property string[] $participants A list of participant PUUIDs.
  */
 class MetadataDto extends BaseContent

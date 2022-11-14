@@ -5,7 +5,7 @@ namespace Rift\RiotApi\Apis\LorStatus\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string[] $locales
+ * @property string[]    $locales
  * @property StatusDto[] $maintenances
  * @property StatusDto[] $incidents
  */

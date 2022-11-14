@@ -6,7 +6,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
  * @property MetadataDto $metaData Match metadata.
- * @property InfoDto $info Match info.
+ * @property InfoDto     $info     Match info.
  */
 class MatchDto extends BaseContent
 {
