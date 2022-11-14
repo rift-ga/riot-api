@@ -19,6 +19,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [LOR-MATCH-V1](https://developer.riotgames.com/apis#lor-match-v1) <sub><sup>Legends of Runeterra</sup></sub>
 - [LOR-RANKED-V1](https://developer.riotgames.com/apis#lor-ranked-v1) <sub><sup>Legends of Runeterra</sup></sub>
 - [LOR-STATUS-V1](https://developer.riotgames.com/apis#lor-status-v1) <sub><sup>Legends of Runeterra</sup></sub>
+- [MATCH-V5](https://developer.riotgames.com/apis#match-v5) <sub><sup>League of Legends</sup></sub>
 - [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sub>
 
 ## Installation
