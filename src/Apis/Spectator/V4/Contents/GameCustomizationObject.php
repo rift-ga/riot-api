@@ -6,7 +6,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
  * @property string $category Category identifier for Game Customization
- * @property string $content Game Customization content
+ * @property string $content  Game Customization content
  */
 class GameCustomizationObject extends BaseContent
 {
