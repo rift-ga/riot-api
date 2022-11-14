@@ -5,9 +5,9 @@ namespace Rift\RiotApi\Apis\Spectator\V4\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int[] $perkIds IDs of the perks/runes assigned.
- * @property int $perkStyle Primary runes path
- * @property int $perkSubStyle Secondary runes path
+ * @property int[] $perkIds      IDs of the perks/runes assigned.
+ * @property int   $perkStyle    Primary runes path
+ * @property int   $perkSubStyle Secondary runes path
  */
 class Perks extends BaseContent
 {
