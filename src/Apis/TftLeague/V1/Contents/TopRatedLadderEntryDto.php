@@ -7,10 +7,10 @@ use Rift\RiotApi\Abstracts\BaseContent;
 /**
  * @property string $summonerId
  * @property string $summonerName
- * @property string $ratedTier (Legal values: ORANGE, PURPLE, BLUE, GREEN, GRAY)
- * @property int $ratedRating
- * @property int $wins First placement.
- * @property int $previousUpdateLadderPosition
+ * @property string $ratedTier                    (Legal values: ORANGE, PURPLE, BLUE, GREEN, GRAY)
+ * @property int    $ratedRating
+ * @property int    $wins                         First placement.
+ * @property int    $previousUpdateLadderPosition
  */
 class TopRatedLadderEntryDto extends BaseContent
 {

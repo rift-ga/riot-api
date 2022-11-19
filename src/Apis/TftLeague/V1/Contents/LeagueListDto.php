@@ -5,11 +5,11 @@ namespace Rift\RiotApi\Apis\TftLeague\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $leagueId
+ * @property string          $leagueId
  * @property LeagueItemDTO[] $entries
- * @property string $tier
- * @property string $name
- * @property string $queue
+ * @property string          $tier
+ * @property string          $name
+ * @property string          $queue
  */
 class LeagueListDto extends BaseContent
 {
