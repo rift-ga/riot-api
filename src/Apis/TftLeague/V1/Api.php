@@ -43,7 +43,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/tft/league/v1/entries/by-summoner/{summonerId}',
             pathParams: [
-                '{summonerId}' => $summonerId
+                '{summonerId}' => $summonerId,
             ]
         );
 
@@ -55,9 +55,10 @@ class Api extends BaseApi implements Contract
      *
      * @see https://developer.riotgames.com/apis#tft-league-v1/GET_getLeagueEntries
      *
-     * @param Tier $tier
+     * @param Tier     $tier
      * @param Division $division
-     * @param int $page Defaults to 1. Starts with page 1.
+     * @param int      $page     Defaults to 1. Starts with page 1.
+     *
      * @return LeagueEntryDTO[]
      */
     public function getLeagueEntries(Tier $tier, Division $division, int $page = 1)
@@ -97,6 +98,7 @@ class Api extends BaseApi implements Contract
      * @see https://developer.riotgames.com/apis#tft-league-v1/GET_getLeagueById
      *
      * @param string $leagueId The UUID of the league.
+     *
      * @return LeagueListDTO
      */
     public function getLeagueById(string $leagueId)
@@ -105,7 +107,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/tft/league/v1/leagues/{leagueId}',
             pathParams: [
-                '{leagueId}' => $leagueId
+                '{leagueId}' => $leagueId,
             ],
         );
 

@@ -5,10 +5,10 @@ namespace Rift\RiotApi\Apis\TftLeague\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $losses
+ * @property int    $losses
  * @property string $progress
- * @property int $target
- * @property int $wins
+ * @property int    $target
+ * @property int    $wins
  */
 class MiniSeriesDto extends BaseContent
 {
