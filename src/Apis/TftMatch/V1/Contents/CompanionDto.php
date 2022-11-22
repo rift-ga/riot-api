@@ -6,6 +6,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
 
 class CompanionDto extends BaseContent
 {
-    final protected function __construct() {
+    final protected function __construct()
+    {
     }
 }

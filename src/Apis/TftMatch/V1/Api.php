@@ -21,7 +21,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/tft/match/v1/matches/by-puuid/{puuid}/ids',
             pathParams: [
-                '{puuid}' => $puuid
+                '{puuid}' => $puuid,
             ],
             queryParams: [
                 'start' => $start,
@@ -47,7 +47,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/tft/match/v1/matches/{matchId}',
             pathParams: [
-                '{matchId}' => $matchId
+                '{matchId}' => $matchId,
             ]
         );
 
