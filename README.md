@@ -23,6 +23,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [SPECTATOR-V4](https://developer.riotgames.com/apis#spectator-v4) <sub><sup>League of Legends</sup></sub>
 - [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sub>
 - [TFT-LEAGUE-V1](https://developer.riotgames.com/apis#tft-league-v1) <sub><sup>Teamfight Tactics</sup></sub>
+- [TFT-MATCH-V1](https://developer.riotgames.com/apis#tft-match-v1) <sub><sup>Teamfight Tactics</sup></sub>
 
 ## Installation
 
