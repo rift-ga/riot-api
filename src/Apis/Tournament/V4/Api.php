@@ -1,20 +1,18 @@
 <?php
 
-namespace Rift\RiotApi\Apis\TournamentStub\V4;
+namespace Rift\RiotApi\Apis\Tournament\V4;
 
 use Rift\RiotApi\Abstracts\BaseApi;
-use Rift\RiotApi\Apis\TournamentStub\V4\Contents\LobbyEventDtoWrapper;
+use Rift\RiotApi\Apis\Tournament\V4\Contents\LobbyEventDtoWrapper;
+use Rift\RiotApi\Apis\Tournament\V4\Contents\TournamentCodeDto;
 use Rift\RiotApi\RequestData;
 
-/**
- * The tournament-stub API is a stand in that simulates the behavior of the tournament API. Developers looking to apply for tournament API access should use the stub to mock their implementation before applying for a production key.
- */
 class Api extends BaseApi implements Contract
 {
     /**
-     * Create a mock tournament code for the given tournament.
+     * Create a tournament code for the given tournament.
      *
-     * @see https://developer.riotgames.com/apis#tournament-stub-v4/POST_createTournamentCode
+     * @see https://developer.riotgames.com/apis#tournament-v4/POST_createTournamentCode
      *
      * @param int $count The number of codes to create (max 1000)
      * @param int $tournamentId The tournament ID
@@ -40,7 +38,7 @@ class Api extends BaseApi implements Contract
     {
         $requestData = new RequestData(
             method: 'POST',
-            path: '/lol/tournament-stub/v4/codes',
+            path: '/lol/tournament/v4/codes',
             queryParams: [
                 'tournamentId' => $tournamentId,
                 'count' => $count,
@@ -59,9 +57,71 @@ class Api extends BaseApi implements Contract
     }
 
     /**
-     * Gets a mock list of lobby events by tournament code.
+     * Returns the tournament code DTO associated with a tournament code string.
      *
-     * @see https://developer.riotgames.com/apis#tournament-stub-v4/GET_getLobbyEventsByCode
+     * @see https://developer.riotgames.com/apis#tournament-v4/GET_getTournamentCode
+     *
+     * @param string $tournamentCode The tournament code string.
+     *
+     * @return TournamentCodeDto
+     */
+    public function getTournamentCode(string $tournamentCode)
+    {
+        $requestData = new RequestData(
+            method: 'GET',
+            path: '/lol/tournament/v4/codes/{tournamentCode}',
+            pathParams: [
+                'tournamentCode' => $tournamentCode,
+            ],
+        );
+
+        return $this->client->request(requestData: $requestData, output: TournamentCodeDto::class);
+    }
+
+    /**
+     * Update the pick type, map, spectator type, or allowed summoners for a code.
+     *
+     * @see https://developer.riotgames.com/apis#tournament-v4/PUT_updateCode
+     *
+     * @param string $tournamentCode The tournament code to update
+     * @param string[] $allowedSummonerIds Optional list of encrypted summonerIds in order to validate the players eligible to join the lobby. NOTE: We currently do not enforce participants at the team level, but rather the aggregate of teamOne and teamTwo. We may add the ability to enforce at the team level in the future.
+     * @param string $pickType The pick type (Legal values: BLIND_PICK, DRAFT_MODE, ALL_RANDOM, TOURNAMENT_DRAFT)
+     * @param string $mapType The map type (Legal values: SUMMONERS_RIFT, TWISTED_TREELINE, HOWLING_ABYSS)
+     * @param string $spectatorType The spectator type (Legal values: NONE, LOBBYONLY, ALL)
+     *
+     * @return void
+     */
+    public function updateCode(
+        string $tournamentCode,
+        array $allowedSummonerIds,
+        string $pickType,
+        string $mapType,
+        string $spectatorType,
+    )
+    {
+        $requestData = new RequestData(
+            method: 'PUT',
+            path: '/lol/tournament/v4/codes/{tournamentCode}',
+            pathParams: [
+                'tournamentCode' => $tournamentCode,
+            ],
+            bodyParams: [
+                'allowedSummonerIds' => $allowedSummonerIds,
+                'pickType' => $pickType,
+                'mapType' => $mapType,
+                'spectatorType' => $spectatorType,
+            ],
+        );
+
+        return $this->client->request(requestData: $requestData);
+    }
+
+    /**
+     * Gets a list of lobby events by tournament code.
+     *
+     * @see https://developer.riotgames.com/apis#tournament-v4/GET_getLobbyEventsByCode
+     *
+     * @param string $tournamentCode The short code to look up lobby events for
      *
      * @return LobbyEventDtoWrapper
      */
@@ -69,19 +129,20 @@ class Api extends BaseApi implements Contract
     {
         $requestData = new RequestData(
             method: 'GET',
-            path: '/lol/tournament-stub/v4/lobby-events/by-code/{tournamentCode}',
+            path: '/lol/tournament/v4/lobby-events/by-code/{tournamentCode}',
             pathParams: [
                 'tournamentCode' => $tournamentCode,
-            ]
+            ],
         );
 
         return $this->client->request(requestData: $requestData, output: LobbyEventDtoWrapper::class);
     }
 
     /**
-     * Creates a mock tournament provider and returns its ID.
+     * Creates a tournament provider and returns its ID.
+     * Providers will need to call this endpoint first to register their callback URL and their API key with the tournament system before any other tournament provider endpoints will work.
      *
-     * @see https://developer.riotgames.com/apis#tournament-stub-v4/POST_registerProviderData
+     * @see https://developer.riotgames.com/apis#tournament-v4/POST_registerProviderData
      *
      * @param string $region The region in which the provider will be running tournaments. (Legal values: BR, EUNE, EUW, JP, LAN, LAS, NA, OCE, PBE, RU, TR)
      * @param string $url The provider's callback URL to which tournament game results in this region should be posted. The URL must be well-formed, use the http or https protocol, and use the default port for the protocol (http URLs must use port 80, https URLs must use port 443).
@@ -92,20 +153,20 @@ class Api extends BaseApi implements Contract
     {
         $requestData = new RequestData(
             method: 'POST',
-            path: '/lol/tournament-stub/v4/providers',
+            path: '/lol/tournament/v4/providers',
             bodyParams: [
                 'region' => $region,
                 'url' => $url,
-            ]
+            ],
         );
 
         return $this->client->request(requestData: $requestData);
     }
 
     /**
-     * Creates a mock tournament and returns its ID.
+     * Creates a tournament and returns its ID.
      *
-     * @see https://developer.riotgames.com/apis#tournament-stub-v4/POST_registerTournament
+     * @see https://developer.riotgames.com/apis#tournament-v4/POST_registerTournament
      *
      * @param int $providerId The provider ID to specify the regional registered provider data to associate this tournament.
      * @param string $name The optional name of the tournament.
@@ -116,11 +177,11 @@ class Api extends BaseApi implements Contract
     {
         $requestData = new RequestData(
             method: 'POST',
-            path: '/lol/tournament-stub/v4/tournaments',
+            path: '/lol/tournament/v4/tournaments',
             bodyParams: [
                 'providerId' => $providerId,
                 'name' => $name,
-            ]
+            ],
         );
 
         return $this->client->request(requestData: $requestData);

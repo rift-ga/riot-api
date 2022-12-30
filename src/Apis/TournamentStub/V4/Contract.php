@@ -2,6 +2,8 @@
 
 namespace Rift\RiotApi\Apis\TournamentStub\V4;
 
+use Rift\RiotApi\Apis\TournamentStub\V4\Contents\LobbyEventDtoWrapper;
+
 interface Contract
 {
     /**
@@ -30,4 +32,37 @@ interface Contract
         string $mapType,
         string $spectatorType,
     );
+
+    /**
+     * Gets a mock list of lobby events by tournament code.
+     *
+     * @see https://developer.riotgames.com/apis#tournament-stub-v4/GET_getLobbyEventsByCode
+     *
+     * @return LobbyEventDtoWrapper
+     */
+    public function getLobbyEventsByCode(string $tournamentCode);
+
+    /**
+     * Creates a mock tournament provider and returns its ID.
+     *
+     * @see https://developer.riotgames.com/apis#tournament-stub-v4/POST_registerProviderData
+     *
+     * @param string $region The region in which the provider will be running tournaments. (Legal values: BR, EUNE, EUW, JP, LAN, LAS, NA, OCE, PBE, RU, TR)
+     * @param string $url The provider's callback URL to which tournament game results in this region should be posted. The URL must be well-formed, use the http or https protocol, and use the default port for the protocol (http URLs must use port 80, https URLs must use port 443).
+     *
+     * @return int
+     */
+    public function registerProviderData(string $region, string $url);
+
+    /**
+     * Creates a mock tournament and returns its ID.
+     *
+     * @see https://developer.riotgames.com/apis#tournament-stub-v4/POST_registerTournament
+     *
+     * @param int $providerId The provider ID to specify the regional registered provider data to associate this tournament.
+     * @param string $name The optional name of the tournament.
+     *
+     * @return int
+     */
+    public function registerTournament(int $providerId, string $name);
 }

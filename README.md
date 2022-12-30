@@ -26,6 +26,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [TFT-MATCH-V1](https://developer.riotgames.com/apis#tft-match-v1) <sub><sup>Teamfight Tactics</sup></sub>
 - [TFT-STATUS-V1](https://developer.riotgames.com/apis#tft-status-v1) <sub><sup>Teamfight Tactics</sup></sub>
 - [TFT-SUMMONER-V1](https://developer.riotgames.com/apis#tft-summoner-v1) <sub><sup>Teamfight Tactics</sup></sub>
+- [TOURNAMENT-V4](https://developer.riotgames.com/apis#tournament-v4) <sub><sup>League of Legends</sup></sub>
 - [TOURNAMENT-STUB-V4](https://developer.riotgames.com/apis#tournament-stub-v4) <sub><sup>League of Legends</sup></sub>
 
 ## Installation
