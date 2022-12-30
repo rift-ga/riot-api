@@ -5,13 +5,13 @@ namespace Rift\RiotApi\Apis\TftStatus\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $id
- * @property string $author
- * @property bool $publish
- * @property string $publish_locations Legal values: riotclient, riotstatus, game
+ * @property int          $id
+ * @property string       $author
+ * @property bool         $publish
+ * @property string       $publish_locations Legal values: riotclient, riotstatus, game
  * @property ContentDto[] $translations
- * @property string $created_at
- * @property string $updated_at
+ * @property string       $created_at
+ * @property string       $updated_at
  */
 class UpdateDto extends BaseContent
 {

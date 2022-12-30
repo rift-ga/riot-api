@@ -5,15 +5,15 @@ namespace Rift\RiotApi\Apis\TftStatus\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $id
- * @property string $maintenance_status Legal values: scheduled, in_progress, complete
- * @property string $incident_severity Legal values: info, warning, critical
+ * @property int          $id
+ * @property string       $maintenance_status Legal values: scheduled, in_progress, complete
+ * @property string       $incident_severity  Legal values: info, warning, critical
  * @property ContentDto[] $titles
- * @property UpdateDto[] $updates
- * @property string $created_at
- * @property string $archive_at
- * @property string $updated_at
- * @property string[] $platforms Legal values: windows, macos, android, ios, ps4, xbone, switch
+ * @property UpdateDto[]  $updates
+ * @property string       $created_at
+ * @property string       $archive_at
+ * @property string       $updated_at
+ * @property string[]     $platforms          Legal values: windows, macos, android, ios, ps4, xbone, switch
  */
 class StatusDto extends BaseContent
 {
