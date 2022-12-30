@@ -28,6 +28,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [TFT-SUMMONER-V1](https://developer.riotgames.com/apis#tft-summoner-v1) <sub><sup>Teamfight Tactics</sup></sub>
 - [TOURNAMENT-V4](https://developer.riotgames.com/apis#tournament-v4) <sub><sup>League of Legends</sup></sub>
 - [TOURNAMENT-STUB-V4](https://developer.riotgames.com/apis#tournament-stub-v4) <sub><sup>League of Legends</sup></sub>
+- [VAL-CONTENT-V1](https://developer.riotgames.com/apis#val-content-v1) <sub><sup>Valorant</sup></sub>
 
 ## Installation
 
