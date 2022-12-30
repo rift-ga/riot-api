@@ -6,8 +6,8 @@ use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
  * @property string $summonerId The summonerId that triggered the event (Encrypted)
- * @property string $eventType The type of event that was triggered
- * @property string $timestamp Timestamp from the event
+ * @property string $eventType  The type of event that was triggered
+ * @property string $timestamp  Timestamp from the event
  */
 class LobbyEventDto extends BaseContent
 {
