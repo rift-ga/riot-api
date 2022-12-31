@@ -3,6 +3,7 @@
 namespace Rift\RiotApi\Apis\ValContent\V1;
 
 use Rift\RiotApi\Abstracts\BaseApi;
+use Rift\RiotApi\Apis\ValContent\V1\Contents\ContentDto;
 use Rift\RiotApi\RequestData;
 
 class Api extends BaseApi implements Contract
