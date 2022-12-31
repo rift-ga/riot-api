@@ -5,14 +5,14 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $timeSinceGameStartMillis
- * @property int $timeSinceRoundStartMillis
- * @property string $killer PUUID
- * @property string $victim PUUID
- * @property LocationDto $victimLocation
- * @property string[] $assistants List of PUUIDs
+ * @property int                  $timeSinceGameStartMillis
+ * @property int                  $timeSinceRoundStartMillis
+ * @property string               $killer                    PUUID
+ * @property string               $victim                    PUUID
+ * @property LocationDto          $victimLocation
+ * @property string[]             $assistants                List of PUUIDs
  * @property PlayerLocationsDto[] $playerLocations
- * @property FinishingDamageDto $finishingDamage
+ * @property FinishingDamageDto   $finishingDamage
  */
 class KillDto extends BaseContent
 {

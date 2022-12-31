@@ -5,12 +5,12 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $score
- * @property int $roundsPlayed
- * @property int $kills
- * @property int $deaths
- * @property int $assists
- * @property int $playtimeMillis
+ * @property int             $score
+ * @property int             $roundsPlayed
+ * @property int             $kills
+ * @property int             $deaths
+ * @property int             $assists
+ * @property int             $playtimeMillis
  * @property AbilityCastsDto $abilityCasts
  */
 class PlayerStatsDto extends BaseContent

@@ -23,7 +23,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/val/match/v1/matches/{matchId}',
             pathParams: [
-                '{matchId}' => $matchId
+                '{matchId}' => $matchId,
             ],
         );
 
@@ -43,7 +43,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/val/match/v1/matchlists/by-puuid/{puuid}',
             pathParams: [
-                '{puuid}' => $puuid
+                '{puuid}' => $puuid,
             ],
         );
 
@@ -66,7 +66,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/val/match/v1/recent-matches/by-queue/{queue}',
             pathParams: [
-                '{queue}' => $queue
+                '{queue}' => $queue,
             ],
         );
 

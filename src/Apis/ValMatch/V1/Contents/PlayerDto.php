@@ -5,16 +5,16 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $puuid
- * @property string $gameName
- * @property string $tagLine
- * @property string $teamId
- * @property string $partyId
- * @property string $characterId
+ * @property string         $puuid
+ * @property string         $gameName
+ * @property string         $tagLine
+ * @property string         $teamId
+ * @property string         $partyId
+ * @property string         $characterId
  * @property PlayerStatsDto $stats
- * @property int $competitiveTier
- * @property string $playerCard
- * @property string $playerTitle
+ * @property int            $competitiveTier
+ * @property string         $playerCard
+ * @property string         $playerTitle
  */
 class PlayerDto extends BaseContent
 {

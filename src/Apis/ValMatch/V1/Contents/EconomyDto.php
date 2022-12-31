@@ -5,11 +5,11 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $loadoutValue
+ * @property int    $loadoutValue
  * @property string $weapon
  * @property string $armor
- * @property int $remaining
- * @property int $spent
+ * @property int    $remaining
+ * @property int    $spent
  */
 class EconomyDto extends BaseContent
 {

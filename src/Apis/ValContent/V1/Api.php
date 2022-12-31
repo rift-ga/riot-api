@@ -21,7 +21,7 @@ class Api extends BaseApi implements Contract
             method: 'GET',
             path: '/val/content/v1/contents',
             queryParams: [
-                'locale' => $locale
+                'locale' => $locale,
             ]
         );
 
