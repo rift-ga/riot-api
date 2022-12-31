@@ -9,7 +9,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
  * @property PlayerDto[] $players
  * @property CoachDto[] $coaches
  * @property TeamDto[] $teams
- * @property RoundResultDto[]  $roundResults
+ * @property RoundResultDto[] $roundResults
  */
 class MatchDto extends BaseContent
 {

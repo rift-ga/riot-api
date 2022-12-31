@@ -31,6 +31,7 @@ This package provides php wrappers for APIs issued by [Riot Games](https://www.r
 - [VAL-CONTENT-V1](https://developer.riotgames.com/apis#val-content-v1) <sub><sup>VALORANT</sup></sub>
 - [VAL-MATCH-V1](https://developer.riotgames.com/apis#val-match-v1) <sub><sup>VALORANT</sup></sub>
 - [VAL-RANKED-V1](https://developer.riotgames.com/apis#val-ranked-v1) <sub><sup>VALORANT</sup></sub>
+- [VAL-STATUS-V1](https://developer.riotgames.com/apis#val-status-v1) <sub><sup>VALORANT</sup></sub>
 
 ## Installation
 

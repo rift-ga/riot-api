@@ -14,7 +14,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
  * @property PlayerStatsDto $stats
  * @property int $competitiveTier
  * @property string $playerCard
- * @property string  $playerTitle
+ * @property string $playerTitle
  */
 class PlayerDto extends BaseContent
 {
@@ -28,7 +28,7 @@ class PlayerDto extends BaseContent
         public readonly PlayerStatsDto $stats,
         public readonly int $competitiveTier,
         public readonly string $playerCard,
-        public readonly string  $playerTitle,
+        public readonly string $playerTitle,
     ) {
     }
 }
