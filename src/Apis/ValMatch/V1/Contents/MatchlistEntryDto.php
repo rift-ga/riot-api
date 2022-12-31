@@ -6,7 +6,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
  * @property string $matchId
- * @property int $gameStartTimeMillis
+ * @property int    $gameStartTimeMillis
  * @property string $teamId
  */
 class MatchlistEntryDto extends BaseContent

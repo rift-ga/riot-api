@@ -5,8 +5,8 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $puuid
- * @property float $viewRadians
+ * @property string      $puuid
+ * @property float       $viewRadians
  * @property LocationDto $location
  */
 class PlayerLocationsDto extends BaseContent

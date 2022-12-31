@@ -5,12 +5,12 @@ namespace Rift\RiotApi\Apis\ValRanked\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $puuid This field may be omitted if the player has been anonymized.
- * @property string $gameName This field may be omitted if the player has been anonymized.
- * @property string $tagLine This field may be omitted if the player has been anonymized.
- * @property int $leaderboardRank
- * @property int $rankedRating
- * @property int $numberOfWins
+ * @property string $puuid           This field may be omitted if the player has been anonymized.
+ * @property string $gameName        This field may be omitted if the player has been anonymized.
+ * @property string $tagLine         This field may be omitted if the player has been anonymized.
+ * @property int    $leaderboardRank
+ * @property int    $rankedRating
+ * @property int    $numberOfWins
  */
 class PlayerDto extends BaseContent
 {

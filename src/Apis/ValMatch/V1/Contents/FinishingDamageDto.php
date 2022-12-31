@@ -7,7 +7,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
 /**
  * @property string $damageType
  * @property string $damageItem
- * @property bool $isSecondaryFireMode
+ * @property bool   $isSecondaryFireMode
  */
 class FinishingDamageDto extends BaseContent
 {

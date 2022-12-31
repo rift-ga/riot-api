@@ -5,10 +5,10 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property MatchInfoDto $matchInfo
- * @property PlayerDto[] $players
- * @property CoachDto[] $coaches
- * @property TeamDto[] $teams
+ * @property MatchInfoDto     $matchInfo
+ * @property PlayerDto[]      $players
+ * @property CoachDto[]       $coaches
+ * @property TeamDto[]        $teams
  * @property RoundResultDto[] $roundResults
  */
 class MatchDto extends BaseContent

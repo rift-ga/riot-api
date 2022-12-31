@@ -5,9 +5,9 @@ namespace Rift\RiotApi\Apis\ValStatus\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $id
- * @property string $name
- * @property string[] $locales
+ * @property string      $id
+ * @property string      $name
+ * @property string[]    $locales
  * @property StatusDto[] $maintenances
  * @property StatusDto[] $incidents
  */

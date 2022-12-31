@@ -5,11 +5,11 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $receiver PUUID
- * @property int $damage
- * @property int $legshots
- * @property int $bodyshots
- * @property int $headshots
+ * @property string $receiver  PUUID
+ * @property int    $damage
+ * @property int    $legshots
+ * @property int    $bodyshots
+ * @property int    $headshots
  */
 class DamageDto extends BaseContent
 {

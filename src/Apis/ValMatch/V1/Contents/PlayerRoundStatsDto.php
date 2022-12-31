@@ -5,12 +5,12 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $puuid
- * @property KillDto[] $kills
+ * @property string      $puuid
+ * @property KillDto[]   $kills
  * @property DamageDto[] $damage
- * @property int $score
- * @property EconomyDto $economy
- * @property AbilityDto $ability
+ * @property int         $score
+ * @property EconomyDto  $economy
+ * @property AbilityDto  $ability
  */
 class PlayerRoundStatsDto extends BaseContent
 {

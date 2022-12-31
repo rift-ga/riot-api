@@ -5,21 +5,21 @@ namespace Rift\RiotApi\Apis\ValMatch\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property int $roundNum
- * @property string $roundResult
- * @property string $roundCeremony
- * @property string $winningTeam
- * @property string $bombPlanter PUUID of player
- * @property string $bombDefuser PUUID of player
- * @property int $plantRoundTime
- * @property PlayerLocationsDto[] $plantPlayerLocations
- * @property LocationDto $plantLocation
- * @property string $plantSite
- * @property int $defuseRoundTime
- * @property PlayerLocationsDto[] $defusePlayerLocations
- * @property LocationDto $defuseLocation
+ * @property int                   $roundNum
+ * @property string                $roundResult
+ * @property string                $roundCeremony
+ * @property string                $winningTeam
+ * @property string                $bombPlanter           PUUID of player
+ * @property string                $bombDefuser           PUUID of player
+ * @property int                   $plantRoundTime
+ * @property PlayerLocationsDto[]  $plantPlayerLocations
+ * @property LocationDto           $plantLocation
+ * @property string                $plantSite
+ * @property int                   $defuseRoundTime
+ * @property PlayerLocationsDto[]  $defusePlayerLocations
+ * @property LocationDto           $defuseLocation
  * @property PlayerRoundStatsDto[] $playerStats
- * @property string $roundResultCode
+ * @property string                $roundResultCode
  */
 class RoundResultDto extends BaseContent
 {

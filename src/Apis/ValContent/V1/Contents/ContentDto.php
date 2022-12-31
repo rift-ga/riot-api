@@ -5,7 +5,7 @@ namespace Rift\RiotApi\Apis\ValContent\V1\Contents;
 use Rift\RiotApi\Abstracts\BaseContent;
 
 /**
- * @property string $version
+ * @property string           $version
  * @property ContentItemDto[] $characters
  * @property ContentItemDto[] $maps
  * @property ContentItemDto[] $chromas
@@ -19,7 +19,7 @@ use Rift\RiotApi\Abstracts\BaseContent;
  * @property ContentItemDto[] $charmLevels
  * @property ContentItemDto[] $playerCards
  * @property ContentItemDto[] $playerTitles
- * @property ActDto[] $acts
+ * @property ActDto[]         $acts
  */
 class ContentDto extends BaseContent
 {
