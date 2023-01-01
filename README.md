@@ -4,34 +4,34 @@
 [![StyleCI](https://github.styleci.io/repos/540948663/shield?style=flat&branch=main)](https://github.styleci.io/repos/540948663?branch=main)
 
 ## About
-This package provides php wrappers for APIs issued by [Riot Games](https://www.riotgames.com/):  
-- [ACCOUNT-V1](https://developer.riotgames.com/apis#account-v1) <sub><sup>Accounts RSO</sup></sub>
-- [CHAMPION-MASTERY-V4](https://developer.riotgames.com/apis#champion-mastery-v4) <sub><sup>League of Legends</sup></sub>
-- [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3) <sub><sup>League of Legends</sup></sub>
-- [CLASH-V1](https://developer.riotgames.com/apis#clash-v1) <sub><sup>League of Legends</sup></sub>
-- [LEAGUE-EXP-V4](https://developer.riotgames.com/apis#league-exp-v4) <sub><sup>League of Legends</sup></sub>
-- [LEAGUE-V4](https://developer.riotgames.com/apis#league-v4) <sub><sup>League of Legends</sup></sub>
-- [LOL-CHALLENGES-V4](https://developer.riotgames.com/apis#lol-challenges-v1) <sub><sup>League of Legends</sup></sub>
-- [LOL-STATUS-V3](https://developer.riotgames.com/apis#lol-status-v3) <sub><sup>League of Legends</sup></sub>
-- [LOL-STATUS-V4](https://developer.riotgames.com/apis#lol-status-v4) <sub><sup>Teamfight Tactics</sup></sub>
-- [LOR-DECK-V1](https://developer.riotgames.com/apis#lor-deck-v1) <sub><sup>Legends of Runeterra RSO</sup></sub>
-- [LOR-INVENTORY-V1](https://developer.riotgames.com/apis#lor-inventory-v1) <sub><sup>Legends of Runeterra RSO</sup></sub>
-- [LOR-MATCH-V1](https://developer.riotgames.com/apis#lor-match-v1) <sub><sup>Legends of Runeterra</sup></sub>
-- [LOR-RANKED-V1](https://developer.riotgames.com/apis#lor-ranked-v1) <sub><sup>Legends of Runeterra</sup></sub>
-- [LOR-STATUS-V1](https://developer.riotgames.com/apis#lor-status-v1) <sub><sup>Legends of Runeterra</sup></sub>
-- [MATCH-V5](https://developer.riotgames.com/apis#match-v5) <sub><sup>League of Legends</sup></sub>
-- [SPECTATOR-V4](https://developer.riotgames.com/apis#spectator-v4) <sub><sup>League of Legends</sup></sub>
-- [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4) <sub><sup>League of Legends</sup></sub>
-- [TFT-LEAGUE-V1](https://developer.riotgames.com/apis#tft-league-v1) <sub><sup>Teamfight Tactics</sup></sub>
-- [TFT-MATCH-V1](https://developer.riotgames.com/apis#tft-match-v1) <sub><sup>Teamfight Tactics</sup></sub>
-- [TFT-STATUS-V1](https://developer.riotgames.com/apis#tft-status-v1) <sub><sup>Teamfight Tactics</sup></sub>
-- [TFT-SUMMONER-V1](https://developer.riotgames.com/apis#tft-summoner-v1) <sub><sup>Teamfight Tactics</sup></sub>
-- [TOURNAMENT-V4](https://developer.riotgames.com/apis#tournament-v4) <sub><sup>League of Legends</sup></sub>
-- [TOURNAMENT-STUB-V4](https://developer.riotgames.com/apis#tournament-stub-v4) <sub><sup>League of Legends</sup></sub>
-- [VAL-CONTENT-V1](https://developer.riotgames.com/apis#val-content-v1) <sub><sup>VALORANT</sup></sub>
-- [VAL-MATCH-V1](https://developer.riotgames.com/apis#val-match-v1) <sub><sup>VALORANT</sup></sub>
-- [VAL-RANKED-V1](https://developer.riotgames.com/apis#val-ranked-v1) <sub><sup>VALORANT</sup></sub>
-- [VAL-STATUS-V1](https://developer.riotgames.com/apis#val-status-v1) <sub><sup>VALORANT</sup></sub>
+This package provides php wrappers for APIs issued by [Riot Games](https://www.riotgames.com/):
+
+| API                                                                             | Fully implemented | Tests passing  | 
+|---------------------------------------------------------------------------------|:-----------------:|:--------------:|
+| [ACCOUNT-V1](https://developer.riotgames.com/apis#account-v1)                   |        ✔️         |       ❌️       |
+| [CHAMPION-MASTERY-V4](https://developer.riotgames.com/apis#champion-mastery-v4) |        ✔️         |       ❌        |
+| [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3)                 |        ✔️         |       ❌        |
+| [CLASH-V1](https://developer.riotgames.com/apis#clash-v1)                       |        ✔️         |       ❌        |
+| [LEAGUE-EXP-V4](https://developer.riotgames.com/apis#league-exp-v4)             |        ✔️         |       ❌        |
+| [LEAGUE-V4](https://developer.riotgames.com/apis#league-v4)                     |        ✔️         |       ❌        |
+| [LOL-CHALLENGES-V1](https://developer.riotgames.com/apis#lol-challenges-v1)     |        ✔️         |       ❌        |
+| [LOL-STATUS-V3](https://developer.riotgames.com/apis#lol-status-v3)             |        ✔️         |       ❌        |
+| [LOL-STATUS-V4](https://developer.riotgames.com/apis#lol-status-v4)             |        ✔️         |       ❌        |
+| [LOR-DECK-V1](https://developer.riotgames.com/apis#lor-deck-v1)                 |        ✔️         |       ❌        |
+| [LOR-INVENTORY-V1](https://developer.riotgames.com/apis#lor-inventory-v1)       |        ✔️         |       ❌        |
+| [MATCH-V5](https://developer.riotgames.com/apis#match-v5)                       |        ✔️         |       ❌        |
+| [SPECTATOR-V4](https://developer.riotgames.com/apis#spectator-v4)               |        ✔️         |       ❌        |
+| [SUMMONER-V4](https://developer.riotgames.com/apis#summoner-v4)                 |        ✔️         |       ❌        |
+| [TFT-LEAGUE-V1](https://developer.riotgames.com/apis#tft-league-v1)             |        ✔️         |       ❌        |
+| [TFT-MATCH-V1](https://developer.riotgames.com/apis#tft-match-v1)               |        ✔️         |       ❌        |
+| [TFT-STATUS-V1](https://developer.riotgames.com/apis#tft-status-v1)             |        ✔️         |       ❌        |
+| [TFT-SUMMONER-V1](https://developer.riotgames.com/apis#tft-summoner-v1)         |        ✔️         |       ❌        |
+| [TOURNAMENT-STUB-V4](https://developer.riotgames.com/apis#tournament-stub-v4)   |        ✔️         |       ❌        |
+| [TOURNAMENT-V4](https://developer.riotgames.com/apis#tournament-v4)             |        ✔️         |       ❌        |
+| [VAL-CONTENT-V1](https://developer.riotgames.com/apis#val-content-v1)           |        ✔️         |       ❌        |
+| [VAL-MATCH-V1](https://developer.riotgames.com/apis#val-match-v1)               |        ✔️         |       ❌        |
+| [VAL-RANKED-V1](https://developer.riotgames.com/apis#val-ranked-v1)             |        ✔️         |       ❌        |
+| [VAL-STATUS-V1](https://developer.riotgames.com/apis#val-status-v1)             |        ✔️         |       ❌        |
 
 ## Installation
 
