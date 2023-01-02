@@ -1,14 +1,15 @@
 # PHP Wrapper for Riot Apis
 
-[![License](https://img.shields.io/packagist/l/rift/riot-api?color=blue)](./LICENSE.md)
 [![StyleCI](https://github.styleci.io/repos/540948663/shield?style=flat&branch=main)](https://github.styleci.io/repos/540948663?branch=main)
+[![Packagist Version](https://img.shields.io/packagist/v/rift/riot-api?color=blue&label=stable)](https://packagist.org/packages/rift/riot-api)
+[![License](https://img.shields.io/packagist/l/rift/riot-api?color=blue)](./LICENSE.md)
 
 ## About
 This package provides php wrappers for APIs issued by [Riot Games](https://www.riotgames.com/):
 
 | API                                                                             | Fully implemented | Tests passing  | 
 |---------------------------------------------------------------------------------|:-----------------:|:--------------:|
-| [ACCOUNT-V1](https://developer.riotgames.com/apis#account-v1)                   |        ✔️         |       ❌️       |
+| [ACCOUNT-V1](https://developer.riotgames.com/apis#account-v1)                   |        ✔️         |       ❌️        |
 | [CHAMPION-MASTERY-V4](https://developer.riotgames.com/apis#champion-mastery-v4) |        ✔️         |       ❌        |
 | [CHAMPION-V3](https://developer.riotgames.com/apis#champion-v3)                 |        ✔️         |       ❌        |
 | [CLASH-V1](https://developer.riotgames.com/apis#clash-v1)                       |        ✔️         |       ❌        |
