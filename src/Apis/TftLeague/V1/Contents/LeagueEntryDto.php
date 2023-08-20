@@ -29,8 +29,6 @@ class LeagueEntryDto extends BaseContent
         public readonly string $summonerId,
         public readonly string $summonerName,
         public readonly string $queueType,
-        public readonly ?string $ratedTier = "",
-        public readonly ?int $ratedRating = 0,
         public readonly string $tier,
         public readonly string $rank,
         public readonly int $leaguePoints,
@@ -41,6 +39,8 @@ class LeagueEntryDto extends BaseContent
         public readonly bool $freshBlood,
         public readonly bool $inactive,
         public readonly MiniSeriesDTO $miniSeries,
+        public readonly ?string $ratedTier = "",
+        public readonly ?int $ratedRating = 0,
     ) {
     }
 }
