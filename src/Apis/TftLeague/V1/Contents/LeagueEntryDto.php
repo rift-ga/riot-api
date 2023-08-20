@@ -38,7 +38,7 @@ class LeagueEntryDto extends BaseContent
         public readonly bool $veteran,
         public readonly bool $freshBlood,
         public readonly bool $inactive,
-        public readonly MiniSeriesDTO $miniSeries,
+        public readonly ?MiniSeriesDTO $miniSeries = null, // Mini Series do not exist on TFT
         public readonly ?string $ratedTier = "",
         public readonly ?int $ratedRating = 0,
     ) {
