@@ -20,13 +20,13 @@ class InfoDto extends BaseContent
     final protected function __construct(
         public readonly int $game_datetime,
         public readonly int $game_length,
-        public readonly string $game_variation,
         public readonly string $game_version,
         public readonly array $participants,
         public readonly int $queue_id,
         public readonly string $tft_game_type,
         public readonly string $tft_set_core_name,
         public readonly int $tft_set_number,
+        public readonly ?string $game_variation = '',
     ) {
     }
 }
